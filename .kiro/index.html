@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix My Grammar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Fix My Grammar</h1>
+            <p class="subtitle">Clean, simple grammar correction</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="input-text">Your Text</label>
+                <textarea id="input-text" placeholder="Paste or type your text here..."></textarea>
+            </div>
+
+            <div class="options">
+                <div class="option-group">
+                    <label for="tone">Tone</label>
+                    <select id="tone">
+                        <option value="neutral">Neutral</option>
+                        <option value="formal">Formal</option>
+                        <option value="friendly">Friendly</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="mode">Word Mode</label>
+                    <select id="mode">
+                        <option value="normal">Normal</option>
+                        <option value="clarity">Clarity Improve</option>
+                        <option value="shorten">Shorten</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label>
+                        <input type="checkbox" id="show-comparison"> Show Before/After
+                    </label>
+                </div>
+            </div>
+
+            <button id="fix-btn" class="fix-button">Fix Grammar</button>
+
+            <div id="output-section" class="output-section hidden">
+                <div id="corrected-output"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="grammar-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
